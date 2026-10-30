@@ -1,0 +1,48 @@
+/* Dashboard overview */
+
+.dashboard-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.welcome-section p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+/* Summary cards */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.summary-card {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.summary-card p {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.summary-card h2 {
+    font-size: 22px;
+    margin: 12px 0;
+    color: var(--text-primary);
+}
+
+.summary-card span {
+    font-size: 12px;
+    color: var(--text-secondary);
+}

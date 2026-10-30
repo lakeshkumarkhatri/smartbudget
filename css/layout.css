@@ -1,0 +1,30 @@
+/* Main application layout */
+
+.app-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+}
+
+/* Main content wrapper */
+
+.main-wrapper {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.header {
+    height: 70px;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Main content */
+
+.main-content {
+    flex: 1;
+    padding: var(--spacing-lg);
+}

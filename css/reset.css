@@ -1,0 +1,32 @@
+/* Reset default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base page styling */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+/* Remove default link styling */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Make form elements inherit typography */
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}

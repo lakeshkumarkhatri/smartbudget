@@ -1,0 +1,60 @@
+/* Tablet screens */
+
+@media (max-width: 1024px) {
+
+    .summary-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile screens */
+
+@media (max-width: 768px) {
+
+    .app-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header {
+        min-height: 70px;
+        height: auto;
+        padding: 15px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Small mobile screens */
+
+@media (max-width: 480px) {
+
+    .header-profile {
+        display: none;
+    }
+
+    .summary-card h2 {
+        font-size: 19px;
+    }
+
+}
