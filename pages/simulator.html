@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +48,103 @@
             </header>
 
             <main class="main-content">
-                <h2>Spending Simulator</h2>
-                <p>Your spending simulation tools and results will appear here.</p>
+                <!-- Page Introduction -->
+                <section class="page-intro">
+                    <h2>Spending Simulator</h2>
+                    <p>Explore how planned purchases could affect your monthly budget.</p>
+                </section>
+
+                <!-- Current Budget Summary -->
+                <section class="simulator-summary">
+                    <div class="simulator-card">
+                        <p>Monthly Budget</p>
+                        <h3>Rs. 100,000</h3>
+                    </div>
+
+                    <div class="simulator-card">
+                        <p>Current Expenses</p>
+                        <h3>Rs. 35,000</h3>
+                    </div>
+
+                    <div class="simulator-card">
+                        <p>Available Balance</p>
+                        <h3>Rs. 65,000</h3>
+                    </div>
+                </section>
+
+                <!-- Simulated Purchase Form -->
+                <section class="simulator-form-section">
+                    <h3>Simulate a New Purchase</h3>
+                    <p class="section-description">
+                        Enter a hypothetical purchase to see its impact on your budget.
+                    </p>
+
+                    <form class="simulator-form">
+                        <div class="form-group">
+                            <label for="purchaseName">Purchase Name</label>
+                            <input type="text" id="purchaseName" placeholder="e.g. New Laptop">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="purchaseCategory">Category</label>
+                            <select id="purchaseCategory">
+                                <option value="">Select Category</option>
+                                <option>Food</option>
+                                <option>Transport</option>
+                                <option>Shopping</option>
+                                <option>Bills</option>
+                                <option>Education</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="purchaseAmount">Purchase Amount (PKR)</label>
+                            <input type="number" id="purchaseAmount" placeholder="Enter amount">
+                        </div>
+
+                        <button type="button" class="primary-btn">
+                            Simulate Purchase
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Simulation Results -->
+                <section class="simulation-results">
+                    <h3>Simulation Results</h3>
+
+                    <div class="simulation-comparison">
+                        <div class="comparison-card">
+                            <p>Balance Before Purchase</p>
+                            <h3>Rs. 65,000</h3>
+                        </div>
+
+                        <div class="comparison-card">
+                            <p>Simulated Purchase</p>
+                            <h3>Rs. 15,000</h3>
+                        </div>
+
+                        <div class="comparison-card">
+                            <p>Balance After Purchase</p>
+                            <h3>Rs. 50,000</h3>
+                        </div>
+                    </div>
+
+                    <p class="simulation-note">
+                        This is a hypothetical result. Your actual expenses will not change
+                        unless you explicitly apply the simulation.
+                    </p>
+
+                    <div class="simulation-actions">
+                        <button type="button" class="primary-btn">
+                            Apply Simulation
+                        </button>
+
+                        <button type="button" class="secondary-btn">
+                            Reset Simulation
+                        </button>
+                    </div>
+                </section>
             </main>
 
         </div>
@@ -56,4 +152,5 @@
     </div>
 
 </body>
+
 </html>

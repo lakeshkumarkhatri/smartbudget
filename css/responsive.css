@@ -58,3 +58,181 @@
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .budget-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .primary-btn {
+        width: 100%;
+    }
+
+    .budget-form-section,
+    .budget-categories {
+        padding: 18px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .expense-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-form {
+        grid-template-columns: 1fr;
+    }
+
+    .expense-form .primary-btn {
+        width: 100%;
+    }
+
+    .expense-form-section,
+    .expense-list-section {
+        padding: 18px;
+    }
+
+    .expense-filters {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .expense-filters input,
+    .expense-filters select {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .simulator-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .simulator-form {
+        grid-template-columns: 1fr;
+    }
+
+    .simulator-form .primary-btn {
+        width: 100%;
+    }
+
+    .simulation-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .simulator-form-section,
+    .simulation-results {
+        padding: 18px;
+    }
+
+    .simulation-actions button {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .savings-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .savings-form {
+        grid-template-columns: 1fr;
+    }
+
+    .savings-form .primary-btn {
+        width: 100%;
+    }
+
+    .savings-form-section,
+    .active-goals-section {
+        padding: 18px;
+    }
+
+    .goal-amount {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .analysis-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-content {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .donut-chart {
+        width: 200px;
+        height: 200px;
+    }
+
+    .donut-center {
+        width: 125px;
+        height: 125px;
+    }
+
+    .insight-list {
+        grid-template-columns: 1fr;
+    }
+
+    .category-breakdown-section,
+    .spending-insights-section {
+        padding: 18px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .settings-section {
+        padding: 18px;
+    }
+
+    .settings-form {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-form .primary-btn {
+        width: 100%;
+    }
+
+    .settings-action-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .settings-action-item button {
+        width: 100%;
+    }
+
+    .app-information div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .app-information strong {
+        text-align: left;
+    }
+
+}

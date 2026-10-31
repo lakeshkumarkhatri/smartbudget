@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +48,124 @@
             </header>
 
             <main class="main-content">
-                <h2>My Savings Goals</h2>
-                <p>Your savings targets and progress will appear here.</p>
+                <!-- Page Introduction -->
+                <section class="page-intro">
+                    <h2>Savings Goals</h2>
+                    <p>Set financial goals and track your savings progress.</p>
+                </section>
+
+                <!-- Savings Overview -->
+                <section class="savings-summary">
+                    <div class="savings-card">
+                        <p>Total Savings</p>
+                        <h3>Rs. 20,000</h3>
+                    </div>
+
+                    <div class="savings-card">
+                        <p>Active Goals</p>
+                        <h3>3</h3>
+                    </div>
+
+                    <div class="savings-card">
+                        <p>Remaining Target</p>
+                        <h3>Rs. 80,000</h3>
+                    </div>
+                </section>
+
+                <!-- Create Savings Goal -->
+                <section class="savings-form-section">
+                    <h3>Create New Savings Goal</h3>
+
+                    <form class="savings-form">
+                        <div class="form-group">
+                            <label for="goalName">Goal Name</label>
+                            <input type="text" id="goalName" placeholder="e.g. Buy a Laptop">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="targetAmount">Target Amount (PKR)</label>
+                            <input type="number" id="targetAmount" placeholder="Enter target amount">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="currentSavings">Current Savings (PKR)</label>
+                            <input type="number" id="currentSavings" placeholder="Enter current savings">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goalDeadline">Target Date</label>
+                            <input type="date" id="goalDeadline">
+                        </div>
+
+                        <button type="button" class="primary-btn">Create Goal</button>
+                    </form>
+                </section>
+
+                <!-- Active Savings Goals -->
+                <section class="active-goals-section">
+                    <h3>Active Savings Goals</h3>
+
+                    <div class="goal-list">
+
+                        <div class="goal-item">
+                            <div class="goal-info">
+                                <div>
+                                    <h4>New Laptop</h4>
+                                    <p>Target: Rs. 100,000</p>
+                                </div>
+                                <strong>40%</strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+
+                            <div class="goal-amount">
+                                <span>Saved: Rs. 40,000</span>
+                                <span>Remaining: Rs. 60,000</span>
+                            </div>
+                        </div>
+
+                        <div class="goal-item">
+                            <div class="goal-info">
+                                <div>
+                                    <h4>Emergency Fund</h4>
+                                    <p>Target: Rs. 50,000</p>
+                                </div>
+                                <strong>60%</strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 60%;"></div>
+                            </div>
+
+                            <div class="goal-amount">
+                                <span>Saved: Rs. 30,000</span>
+                                <span>Remaining: Rs. 20,000</span>
+                            </div>
+                        </div>
+
+                        <div class="goal-item">
+                            <div class="goal-info">
+                                <div>
+                                    <h4>New Phone</h4>
+                                    <p>Target: Rs. 80,000</p>
+                                </div>
+                                <strong>25%</strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 25%;"></div>
+                            </div>
+
+                            <div class="goal-amount">
+                                <span>Saved: Rs. 20,000</span>
+                                <span>Remaining: Rs. 60,000</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
             </main>
 
         </div>
@@ -56,4 +173,5 @@
     </div>
 
 </body>
+
 </html>

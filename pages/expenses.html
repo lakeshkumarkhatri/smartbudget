@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +48,128 @@
             </header>
 
             <main class="main-content">
-                <h2>Expense Management</h2>
-                <p>Your expense records and transaction details will appear here.</p>
+                <!-- Page Introduction -->
+                <section class="page-intro">
+                    <h2>Expense Manager</h2>
+                    <p>Track and manage your daily expenses.</p>
+                </section>
+
+                <!-- Expense Summary -->
+                <section class="expense-summary">
+                    <div class="expense-card">
+                        <p>Total Expenses</p>
+                        <h3>Rs. 35,000</h3>
+                    </div>
+
+                    <div class="expense-card">
+                        <p>This Month</p>
+                        <h3>Rs. 18,500</h3>
+                    </div>
+
+                    <div class="expense-card">
+                        <p>Transactions</p>
+                        <h3>24</h3>
+                    </div>
+                </section>
+
+                <!-- Add Expense Form -->
+                <section class="expense-form-section">
+                    <h3>Add New Expense</h3>
+
+                    <form class="expense-form">
+                        <div class="form-group">
+                            <label for="expenseTitle">Expense Title</label>
+                            <input type="text" id="expenseTitle" placeholder="e.g. Grocery shopping">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expenseAmount">Amount (PKR)</label>
+                            <input type="number" id="expenseAmount" placeholder="Enter amount">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expenseCategory">Category</label>
+                            <select id="expenseCategory">
+                                <option value="">Select Category</option>
+                                <option>Food</option>
+                                <option>Transport</option>
+                                <option>Shopping</option>
+                                <option>Bills</option>
+                                <option>Education</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expenseDate">Date</label>
+                            <input type="date" id="expenseDate">
+                        </div>
+
+                        <button type="button" class="primary-btn">Add Expense</button>
+                    </form>
+                </section>
+
+                <!-- Expense Transactions -->
+                <section class="expense-list-section">
+                    <div class="expense-list-header">
+                        <h3>Recent Expenses</h3>
+
+                        <div class="expense-filters">
+                            <input type="search" placeholder="Search expenses...">
+
+                            <select>
+                                <option value="">All Categories</option>
+                                <option>Food</option>
+                                <option>Transport</option>
+                                <option>Shopping</option>
+                                <option>Bills</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="expense-table-wrapper">
+                        <table class="expense-table">
+                            <thead>
+                                <tr>
+                                    <th>Expense</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Grocery Shopping</td>
+                                    <td>Food</td>
+                                    <td>28 Oct 2026</td>
+                                    <td>Rs. 4,500</td>
+                                </tr>
+
+                                <tr>
+                                    <td>University Transport</td>
+                                    <td>Transport</td>
+                                    <td>27 Oct 2026</td>
+                                    <td>Rs. 2,000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>New Shirt</td>
+                                    <td>Shopping</td>
+                                    <td>26 Oct 2026</td>
+                                    <td>Rs. 3,500</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Electricity Bill</td>
+                                    <td>Bills</td>
+                                    <td>25 Oct 2026</td>
+                                    <td>Rs. 5,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </main>
 
         </div>
@@ -56,4 +177,5 @@
     </div>
 
 </body>
+
 </html>

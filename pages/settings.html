@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +48,106 @@
             </header>
 
             <main class="main-content">
-                <h2>Application Settings</h2>
-                <p>Your account preferences and settings will appear here.</p>
+                <!-- Page Introduction -->
+                <section class="page-intro">
+                    <h2>Settings</h2>
+                    <p>Manage your profile, preferences, and application data.</p>
+                </section>
+
+                <!-- Profile Settings -->
+                <section class="settings-section">
+                    <h3>Profile Settings</h3>
+
+                    <div class="settings-form">
+                        <div class="form-group">
+                            <label for="userName">Full Name</label>
+                            <input type="text" id="userName" value="SmartBudget User">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userEmail">Email Address</label>
+                            <input type="email" id="userEmail" placeholder="Enter your email">
+                        </div>
+
+                        <button type="button" class="primary-btn">Save Profile</button>
+                    </div>
+                </section>
+
+                <!-- Currency Preferences -->
+                <section class="settings-section">
+                    <h3>Currency Preferences</h3>
+
+                    <div class="form-group">
+                        <label for="currency">Default Currency</label>
+                        <select id="currency">
+                            <option value="PKR" selected>PKR - Pakistani Rupee</option>
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Data Management -->
+                <section class="settings-section">
+                    <h3>Data Management</h3>
+                    <p class="settings-description">
+                        Manage your SmartBudget data and create backups.
+                    </p>
+
+                    <div class="settings-actions">
+                        <div class="settings-action-item">
+                            <div>
+                                <h4>Export Data</h4>
+                                <p>Download your financial data as a backup.</p>
+                            </div>
+                            <button type="button" class="secondary-btn">Export</button>
+                        </div>
+
+                        <div class="settings-action-item">
+                            <div>
+                                <h4>Import Data</h4>
+                                <p>Restore your data from a backup file.</p>
+                            </div>
+                            <button type="button" class="secondary-btn">Import</button>
+                        </div>
+
+                        <div class="settings-action-item">
+                            <div>
+                                <h4>Reset Application</h4>
+                                <p>Clear all saved application data.</p>
+                            </div>
+                            <button type="button" class="danger-btn">Reset Data</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Application Information -->
+                <section class="settings-section">
+                    <h3>Application Information</h3>
+
+                    <div class="app-information">
+                        <div>
+                            <span>Application Name</span>
+                            <strong>SmartBudget</strong>
+                        </div>
+
+                        <div>
+                            <span>Version</span>
+                            <strong>1.0.0</strong>
+                        </div>
+
+                        <div>
+                            <span>Currency</span>
+                            <strong>Pakistani Rupee (PKR)</strong>
+                        </div>
+
+                        <div>
+                            <span>Technology</span>
+                            <strong>HTML, CSS, JavaScript</strong>
+                        </div>
+                    </div>
+                </section>
             </main>
 
         </div>
@@ -56,4 +155,5 @@
     </div>
 
 </body>
+
 </html>
