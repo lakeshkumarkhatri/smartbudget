@@ -20,7 +20,6 @@
     <div class="app-container">
 
         <aside class="sidebar">
-
             <div class="sidebar-brand">
                 <div class="brand-icon">S</div>
                 <h2>SmartBudget</h2>
@@ -35,7 +34,6 @@
                 <a href="analysis.html" class="nav-link">Spending Analysis</a>
                 <a href="settings.html" class="nav-link">Settings</a>
             </nav>
-
         </aside>
 
         <div class="main-wrapper">
@@ -48,46 +46,45 @@
             </header>
 
             <main class="main-content">
-                <!-- Page Introduction -->
+
                 <section class="page-intro">
                     <h2>Spending Simulator</h2>
                     <p>Explore how planned purchases could affect your monthly budget.</p>
                 </section>
 
-                <!-- Current Budget Summary -->
                 <section class="simulator-summary">
                     <div class="simulator-card">
                         <p>Monthly Budget</p>
-                        <h3>Rs. 100,000</h3>
+                        <h3 id="simulatorBudget">Rs. 0</h3>
                     </div>
 
                     <div class="simulator-card">
                         <p>Current Expenses</p>
-                        <h3>Rs. 35,000</h3>
+                        <h3 id="simulatorExpenses">Rs. 0</h3>
                     </div>
 
                     <div class="simulator-card">
                         <p>Available Balance</p>
-                        <h3>Rs. 65,000</h3>
+                        <h3 id="simulatorBalance">Rs. 0</h3>
                     </div>
                 </section>
 
-                <!-- Simulated Purchase Form -->
                 <section class="simulator-form-section">
                     <h3>Simulate a New Purchase</h3>
                     <p class="section-description">
                         Enter a hypothetical purchase to see its impact on your budget.
                     </p>
 
-                    <form class="simulator-form">
+                    <form class="simulator-form" id="simulatorForm">
+
                         <div class="form-group">
                             <label for="purchaseName">Purchase Name</label>
-                            <input type="text" id="purchaseName" placeholder="e.g. New Laptop">
+                            <input type="text" id="purchaseName" placeholder="e.g. New Laptop" required>
                         </div>
 
                         <div class="form-group">
                             <label for="purchaseCategory">Category</label>
-                            <select id="purchaseCategory">
+                            <select id="purchaseCategory" required>
                                 <option value="">Select Category</option>
                                 <option>Food</option>
                                 <option>Transport</option>
@@ -100,56 +97,64 @@
 
                         <div class="form-group">
                             <label for="purchaseAmount">Purchase Amount (PKR)</label>
-                            <input type="number" id="purchaseAmount" placeholder="Enter amount">
+                            <input type="number" id="purchaseAmount" placeholder="Enter amount" min="1" step="0.01"
+                                required>
                         </div>
 
-                        <button type="button" class="primary-btn">
+                        <button type="submit" class="primary-btn">
                             Simulate Purchase
                         </button>
+
                     </form>
                 </section>
 
-                <!-- Simulation Results -->
                 <section class="simulation-results">
                     <h3>Simulation Results</h3>
 
                     <div class="simulation-comparison">
+
                         <div class="comparison-card">
                             <p>Balance Before Purchase</p>
-                            <h3>Rs. 65,000</h3>
+                            <h3 id="balanceBefore">Rs. 0</h3>
                         </div>
 
                         <div class="comparison-card">
                             <p>Simulated Purchase</p>
-                            <h3>Rs. 15,000</h3>
+                            <h3 id="simulatedAmount">Rs. 0</h3>
                         </div>
 
                         <div class="comparison-card">
                             <p>Balance After Purchase</p>
-                            <h3>Rs. 50,000</h3>
+                            <h3 id="balanceAfter">Rs. 0</h3>
                         </div>
+
                     </div>
 
-                    <p class="simulation-note">
+                    <p class="simulation-note" id="simulationMessage">
                         This is a hypothetical result. Your actual expenses will not change
                         unless you explicitly apply the simulation.
                     </p>
 
                     <div class="simulation-actions">
-                        <button type="button" class="primary-btn">
+
+                        <button type="button" class="primary-btn" id="applySimulation">
                             Apply Simulation
                         </button>
 
-                        <button type="button" class="secondary-btn">
+                        <button type="button" class="secondary-btn" id="resetSimulation">
                             Reset Simulation
                         </button>
+
                     </div>
                 </section>
+
             </main>
 
         </div>
 
     </div>
+
+    <script type="module" src="../js/pages/simulator.js"></script>
 
 </body>
 

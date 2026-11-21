@@ -799,3 +799,27 @@
     font-size: 14px;
     text-align: right;
 }
+
+.category-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-category-btn,
+.delete-category-btn {
+    padding: 7px 12px;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    background-color: var(--surface-color);
+}
+
+.edit-category-btn {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.delete-category-btn {
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+}

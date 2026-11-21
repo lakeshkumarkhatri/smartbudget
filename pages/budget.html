@@ -60,17 +60,17 @@
 
                     <div class="budget-card">
                         <p>Monthly Budget</p>
-                        <h3>Rs. 100,000</h3>
+                        <h3 id="monthlyBudget">Rs. 100,000</h3>
                     </div>
 
                     <div class="budget-card">
                         <p>Total Allocated</p>
-                        <h3>Rs. 75,000</h3>
+                        <h3 id="totalAllocated">Rs. 75,000</h3>
                     </div>
 
                     <div class="budget-card">
                         <p>Remaining Budget</p>
-                        <h3>Rs. 25,000</h3>
+                        <h3 id="remainingBudget">Rs. 25,000</h3>
                     </div>
 
                 </section>
@@ -80,7 +80,7 @@
 
                     <h3>Add Budget Category</h3>
 
-                    <form class="budget-form">
+                    <form class="budget-form" id="budgetForm">
 
                         <div class="form-group">
                             <label for="categoryName">Category Name</label>
@@ -92,7 +92,7 @@
                             <input type="number" id="categoryAmount" placeholder="Enter amount">
                         </div>
 
-                        <button type="button" class="primary-btn">
+                        <button type="submit" class="primary-btn">
                             Add Category
                         </button>
 
@@ -105,7 +105,7 @@
 
                     <h3>Budget Categories</h3>
 
-                    <div class="category-list">
+                    <div class="category-list" id="categoryList">
 
                         <div class="category-item">
                             <div>
@@ -148,6 +148,7 @@
         </div>
 
     </div>
-
+    <script type="module" src="../js/pages/budget.js"></script>
 </body>
+
 </html>

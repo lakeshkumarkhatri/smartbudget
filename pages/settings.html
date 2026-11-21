@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +49,7 @@
             </header>
 
             <main class="main-content">
-                <!-- Page Introduction -->
+
                 <section class="page-intro">
                     <h2>Settings</h2>
                     <p>Manage your profile, preferences, and application data.</p>
@@ -69,7 +70,9 @@
                             <input type="email" id="userEmail" placeholder="Enter your email">
                         </div>
 
-                        <button type="button" class="primary-btn">Save Profile</button>
+                        <button type="button" class="primary-btn" id="saveProfileBtn">
+                            Save Profile
+                        </button>
                     </div>
                 </section>
 
@@ -86,22 +89,30 @@
                             <option value="GBP">GBP - British Pound</option>
                         </select>
                     </div>
+
+                    <button type="button" class="primary-btn" id="saveCurrencyBtn">
+                        Save Currency
+                    </button>
                 </section>
 
                 <!-- Data Management -->
                 <section class="settings-section">
                     <h3>Data Management</h3>
+
                     <p class="settings-description">
                         Manage your SmartBudget data and create backups.
                     </p>
 
                     <div class="settings-actions">
+
                         <div class="settings-action-item">
                             <div>
                                 <h4>Export Data</h4>
                                 <p>Download your financial data as a backup.</p>
                             </div>
-                            <button type="button" class="secondary-btn">Export</button>
+                            <button type="button" class="secondary-btn" id="exportDataBtn">
+                                Export
+                            </button>
                         </div>
 
                         <div class="settings-action-item">
@@ -109,7 +120,16 @@
                                 <h4>Import Data</h4>
                                 <p>Restore your data from a backup file.</p>
                             </div>
-                            <button type="button" class="secondary-btn">Import</button>
+                            <button type="button" class="secondary-btn" id="importDataBtn">
+                                Import
+                            </button>
+
+                            <input
+                                type="file"
+                                id="importFile"
+                                accept=".json,application/json"
+                                hidden
+                            >
                         </div>
 
                         <div class="settings-action-item">
@@ -117,8 +137,11 @@
                                 <h4>Reset Application</h4>
                                 <p>Clear all saved application data.</p>
                             </div>
-                            <button type="button" class="danger-btn">Reset Data</button>
+                            <button type="button" class="danger-btn" id="resetDataBtn">
+                                Reset Data
+                            </button>
                         </div>
+
                     </div>
                 </section>
 
@@ -139,7 +162,7 @@
 
                         <div>
                             <span>Currency</span>
-                            <strong>Pakistani Rupee (PKR)</strong>
+                            <strong id="currentCurrency">Pakistani Rupee (PKR)</strong>
                         </div>
 
                         <div>
@@ -148,11 +171,14 @@
                         </div>
                     </div>
                 </section>
+
             </main>
 
         </div>
 
     </div>
+
+    <script type="module" src="../js/pages/settings.js"></script>
 
 </body>
 
